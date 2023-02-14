@@ -3,9 +3,10 @@
 
 name: 'Corne-ish Zen V2, Workman, invertedT, Mac, flip'
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - master
 jobs:
   build:
     uses: ./.github/workflows/main.yml
