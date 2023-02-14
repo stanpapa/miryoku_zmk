@@ -1,8 +1,11 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Corne-ish Zen V2, Mac, Workman'
-on: workflow_dispatch
+name: 'Corne-ish Zen V2, Workman, invertedT, Mac, flip'
+on:
+  push:
+    branches:
+      - main
 jobs:
   build:
     uses: ./.github/workflows/main.yml
@@ -10,4 +13,6 @@ jobs:
     with:
       board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
       alphas: '["workman"]'
+      nav: '["invertedt"]'
       clipboard: '["mac"]'
+      layers: '["flip"]'
