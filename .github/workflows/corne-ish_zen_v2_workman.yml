@@ -5,8 +5,7 @@ name: 'Corne-ish Zen V2, Workman, flip'
 on:
   workflow_dispatch:
   push:
-    branches:
-      - master
+
 jobs:
   build:
     uses: ./.github/workflows/main.yml
