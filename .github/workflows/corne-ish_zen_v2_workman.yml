@@ -15,5 +15,6 @@ jobs:
       board: '["corneish_zen_left","corneish_zen_right"]'
       alphas: '["workman"]'
       layers: '["flip"]'
-      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_ZMK_DISPLAY_FULL_REFRESH_PERIOD=60\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y"]'
-      branches: '["zmkfirmware/zmk/main SethMilliken/zmk/zen-display-patches"]'
+      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
+      # kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_ZMK_DISPLAY_FULL_REFRESH_PERIOD=60\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y"]'
+      # branches: '["zmkfirmware/zmk/main SethMilliken/zmk/zen-display-patches"]'
