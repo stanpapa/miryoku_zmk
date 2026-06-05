@@ -11,10 +11,9 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["corneish_zen_left","corneish_zen_right"]'
+      board: '["corneish_zen_left//zmk","corneish_zen_right//zmk"]'
       alphas: '["workman"]'
       layers: '["flip"]'
-      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\n/ { chosen { /delete-property/ zmk,matrix-transform; zmk,physical-layout = &physical_layout0; }; };"]'
-      branches: '["zmkfirmware/zmk/main"]'
+      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
       # kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_ZMK_DISPLAY_FULL_REFRESH_PERIOD=60\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y"]'
       # branches: '["zmkfirmware/zmk/main SethMilliken/zmk/zen-display-patches"]'
