@@ -11,7 +11,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["corneish_zen_left//zmk","corneish_zen_right//zmk"]'
+      board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
       alphas: '["workman"]'
       layers: '["flip"]'
       kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
